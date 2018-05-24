@@ -76,6 +76,10 @@ public:
             for (int i = 0; i <= pos - 1; ++i) {
                 tmp = tmp->next;
             }
+            if (pos == 0)
+            {
+                first = first->next;
+            }
             deleteNode(tmp);
             length--;
         }
@@ -105,6 +109,7 @@ public:
     void listReverse() {
         Node *tmp = first;
         Node *tmp1 = first->next;
+        swap(first, last);
         tmp->next = nullptr;
         do {
             tmp->prev = tmp1;
@@ -116,12 +121,12 @@ public:
         tmp1->next = tmp;
         tmp->prev = tmp1;
         tmp1->prev = nullptr;
-        swap(first, last);
     };
 
     int listSearchfirst(int key) {
         Node *tmp = first;
         int i = 0;
+
         while (tmp->key != key) {
             i++;
             tmp = tmp->next;
@@ -142,7 +147,7 @@ public:
     void listPrint() {
         Node *result = first;
 
-        while (result->next != nullptr)
+        while (result != nullptr)
         {
             Fout << result->key << " ";
             result = result->next;

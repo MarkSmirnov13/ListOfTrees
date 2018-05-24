@@ -33,12 +33,12 @@ int main() {
         else if (command == "searchall")
         {
             Fin >> key;
-            l.listSearchall(key);
+            Fout << l.listSearchall(key) << endl;
         }
-        else if (command == "searchfirts")
+        else if (command == "searchfirst")
         {
             Fin >> key;
-            l.listSearchfirst(key);
+            Fout << l.listSearchfirst(key) << endl;
         }
     }
 
