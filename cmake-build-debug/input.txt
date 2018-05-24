@@ -1,0 +1,14 @@
+insert 0 1
+insert 2 4
+insert 1 8
+insert 3 8
+print
+delete 2
+edit 2 2
+print
+insert 1 9
+max
+min
+print
+insert 4 8
+searchfirst 8

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sergeysmirnov/Desktop/Марк/GoodWix/Project/ListOfTrees/header.h
+fstream
+-
+
+/Users/sergeysmirnov/Desktop/Марк/GoodWix/Project/ListOfTrees/main.cpp
+header.h
+/Users/sergeysmirnov/Desktop/Марк/GoodWix/Project/ListOfTrees/header.h
+
